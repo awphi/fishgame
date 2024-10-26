@@ -1,0 +1,1665 @@
+{
+  "IRONFANG": {
+    "name": "Ironfang",
+    "rarity": 950,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 5,
+      "mean": 20
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 3,
+      "mean": 10
+    },
+    "resource": {
+      "IRON": 0.9,
+      "BONE": 0.1
+    },
+    "value": 250
+  },
+  "SAILFIN_QUARTZ": {
+    "name": "Sailfin Quartz",
+    "rarity": 600,
+    "waterTemperatureDistribution": {
+      "type": "uniform",
+      "min": 10,
+      "max": 50
+    },
+    "weightDistribution": {
+      "type": "exponential",
+      "lambda": 0.5
+    },
+    "resource": {
+      "QUARTZ": 0.7,
+      "SAND": 0.3
+    },
+    "value": 350
+  },
+  "BRAMBLECLAW": {
+    "name": "Brambleclaw",
+    "rarity": 1200,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 15,
+      "mean": 25
+    },
+    "weightDistribution": {
+      "type": "lognormal",
+      "mean": 2,
+      "sigma": 0.5
+    },
+    "resource": {
+      "WOOD": 0.6,
+      "THORNS": 0.4
+    },
+    "value": 200
+  },
+  "EMBERFIN": {
+    "name": "Emberfin",
+    "rarity": 500,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 8,
+      "mean": 35
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 0.5,
+      "mean": 1.5
+    },
+    "resource": {
+      "COAL": 0.5,
+      "ASH": 0.5
+    },
+    "value": 400
+  },
+  "CORAL_PIKE": {
+    "name": "Coral Pike",
+    "rarity": 800,
+    "waterTemperatureDistribution": {
+      "type": "triangular",
+      "min": 15,
+      "max": 40,
+      "mode": 30
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 2,
+      "mean": 7
+    },
+    "resource": {
+      "CORAL": 0.9,
+      "SAND": 0.1
+    },
+    "value": 300
+  },
+  "SHALE_SHARK": {
+    "name": "Shale Shark",
+    "rarity": 200,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 5,
+      "mean": 40
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 6,
+      "mean": 15
+    },
+    "resource": {
+      "SHALE": 0.7,
+      "STONE": 0.3
+    },
+    "value": 600
+  },
+  "SILVERFIN": {
+    "name": "Silverfin",
+    "rarity": 400,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 7,
+      "mean": 22
+    },
+    "weightDistribution": {
+      "type": "exponential",
+      "lambda": 0.3
+    },
+    "resource": {
+      "SILVER": 0.95,
+      "FISH_SCALES": 0.05
+    },
+    "value": 700
+  },
+  "DRIFTWOOD_EEL": {
+    "name": "Driftwood Eel",
+    "rarity": 850,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 10,
+      "mean": 18
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 2,
+      "mean": 5
+    },
+    "resource": {
+      "WOOD": 0.9,
+      "SEAWEED": 0.1
+    },
+    "value": 180
+  },
+  "GUTTERFISH": {
+    "name": "Gutterfish",
+    "rarity": 1500,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 3,
+      "mean": 15
+    },
+    "weightDistribution": {
+      "type": "lognormal",
+      "mean": 1,
+      "sigma": 0.3
+    },
+    "resource": {
+      "MUD": 0.8,
+      "STONE": 0.2
+    },
+    "value": 50
+  },
+  "SALTWATER_SNAPPER": {
+    "name": "Saltwater Snapper",
+    "rarity": 900,
+    "waterTemperatureDistribution": {
+      "type": "uniform",
+      "min": 0,
+      "max": 40
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 1,
+      "mean": 2.5
+    },
+    "resource": {
+      "SALT": 0.9,
+      "WATER": 0.1
+    },
+    "value": 150
+  },
+  "RAZOR_GILL": {
+    "name": "Razor Gill",
+    "rarity": 750,
+    "waterTemperatureDistribution": {
+      "type": "triangular",
+      "min": 5,
+      "max": 30,
+      "mode": 18
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 1.5,
+      "mean": 4
+    },
+    "resource": {
+      "IRON": 0.6,
+      "RUST": 0.2,
+      "FISH_SCALES": 0.2
+    },
+    "value": 250
+  },
+  "OPALBACK_TUNA": {
+    "name": "Opalback Tuna",
+    "rarity": 100,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 6,
+      "mean": 24
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 5,
+      "mean": 12
+    },
+    "resource": {
+      "OPAL": 0.4,
+      "WATER": 0.6
+    },
+    "value": 1200
+  },
+  "PEWTERFIN": {
+    "name": "Pewterfin",
+    "rarity": 850,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 4,
+      "mean": 10
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 2,
+      "mean": 3
+    },
+    "resource": {
+      "PEWTER": 0.8,
+      "BONE": 0.2
+    },
+    "value": 300
+  },
+  "BLOODSCALE": {
+    "name": "Bloodscale",
+    "rarity": 1100,
+    "waterTemperatureDistribution": {
+      "type": "uniform",
+      "min": 0,
+      "max": 35
+    },
+    "weightDistribution": {
+      "type": "lognormal",
+      "mean": 3,
+      "sigma": 0.8
+    },
+    "resource": {
+      "BLOODSTONE": 0.6,
+      "SAND": 0.4
+    },
+    "value": 180
+  },
+  "MOSS_PIKE": {
+    "name": "Moss Pike",
+    "rarity": 1200,
+    "waterTemperatureDistribution": {
+      "type": "triangular",
+      "min": 5,
+      "max": 20,
+      "mode": 15
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 1.2,
+      "mean": 2
+    },
+    "resource": {
+      "MOSS": 0.7,
+      "STONE": 0.3
+    },
+    "value": 160
+  },
+  "RUSTFIN": {
+    "name": "Rustfin",
+    "rarity": 1300,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 10,
+      "mean": 25
+    },
+    "weightDistribution": {
+      "type": "lognormal",
+      "mean": 1,
+      "sigma": 0.4
+    },
+    "resource": {
+      "RUST": 0.9,
+      "IRON": 0.1
+    },
+    "value": 120
+  },
+  "JADESCALE": {
+    "name": "Jadescale",
+    "rarity": 650,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 5,
+      "mean": 30
+    },
+    "weightDistribution": {
+      "type": "exponential",
+      "lambda": 0.7
+    },
+    "resource": {
+      "JADE": 0.85,
+      "STONE": 0.15
+    },
+    "value": 500
+  },
+  "ASH_MANTA": {
+    "name": "Ash Manta",
+    "rarity": 500,
+    "waterTemperatureDistribution": {
+      "type": "uniform",
+      "min": 30,
+      "max": 50
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 6,
+      "mean": 10
+    },
+    "resource": {
+      "ASH": 0.9,
+      "COAL": 0.1
+    },
+    "value": 350
+  },
+  "BLADETOOTH": {
+    "name": "Bladetooth",
+    "rarity": 300,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 2,
+      "mean": 15
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 2,
+      "mean": 6
+    },
+    "resource": {
+      "IRON": 0.6,
+      "BONE": 0.4
+    },
+    "value": 550
+  },
+  "CINDER_SHARK": {
+    "name": "Cinder Shark",
+    "rarity": 700,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 8,
+      "mean": 35
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 4,
+      "mean": 9
+    },
+    "resource": {
+      "ASH": 0.8,
+      "STONE": 0.2
+    },
+    "value": 400
+  },
+  "GOLDFIN": {
+    "name": "Goldfin",
+    "rarity": 100,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 3,
+      "mean": 20
+    },
+    "weightDistribution": {
+      "type": "exponential",
+      "lambda": 0.2
+    },
+    "resource": {
+      "GOLD": 1
+    },
+    "value": 1000
+  },
+  "CRYSTAL_TROUT": {
+    "name": "Crystal Trout",
+    "rarity": 450,
+    "waterTemperatureDistribution": {
+      "type": "triangular",
+      "min": 5,
+      "max": 20,
+      "mode": 10
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 2,
+      "mean": 3
+    },
+    "resource": {
+      "CRYSTAL": 0.8,
+      "STONE": 0.2
+    },
+    "value": 420
+  },
+  "FROSTFIN": {
+    "name": "Frostfin",
+    "rarity": 850,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 3,
+      "mean": -5
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 2,
+      "mean": 4
+    },
+    "resource": {
+      "ICE": 0.9,
+      "WATER": 0.1
+    },
+    "value": 150
+  },
+  "COPPERBACK": {
+    "name": "Copperback",
+    "rarity": 650,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 6,
+      "mean": 25
+    },
+    "weightDistribution": {
+      "type": "exponential",
+      "lambda": 0.6
+    },
+    "resource": {
+      "COPPER": 0.8,
+      "STONE": 0.2
+    },
+    "value": 350
+  },
+  "SAPPHIRE_PIRANHA": {
+    "name": "Sapphire Piranha",
+    "rarity": 300,
+    "waterTemperatureDistribution": {
+      "type": "triangular",
+      "min": 10,
+      "max": 40,
+      "mode": 25
+    },
+    "weightDistribution": {
+      "type": "lognormal",
+      "mean": 2,
+      "sigma": 0.5
+    },
+    "resource": {
+      "SAPPHIRE": 0.4,
+      "BONE": 0.6
+    },
+    "value": 600
+  },
+  "EMERALD_MINNOW": {
+    "name": "Emerald Minnow",
+    "rarity": 1000,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 7,
+      "mean": 18
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 0.5,
+      "mean": 0.5
+    },
+    "resource": {
+      "EMERALD": 0.9,
+      "FISH_SCALES": 0.1
+    },
+    "value": 450
+  },
+  "GRANITE_GROUPER": {
+    "name": "Granite Grouper",
+    "rarity": 750,
+    "waterTemperatureDistribution": {
+      "type": "uniform",
+      "min": 10,
+      "max": 30
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 5,
+      "mean": 12
+    },
+    "resource": {
+      "GRANITE": 0.7,
+      "STONE": 0.3
+    },
+    "value": 320
+  },
+  "TARFIN": {
+    "name": "Tarfin",
+    "rarity": 1150,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 4,
+      "mean": 35
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 1,
+      "mean": 1
+    },
+    "resource": {
+      "TAR": 0.9,
+      "OIL": 0.1
+    },
+    "value": 100
+  },
+  "OBSIDIAN_RAY": {
+    "name": "Obsidian Ray",
+    "rarity": 400,
+    "waterTemperatureDistribution": {
+      "type": "uniform",
+      "min": 30,
+      "max": 50
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 3,
+      "mean": 5
+    },
+    "resource": {
+      "OBSIDIAN": 0.9,
+      "STONE": 0.1
+    },
+    "value": 600
+  },
+  "PEBBLETOOTH": {
+    "name": "Pebbletooth",
+    "rarity": 1300,
+    "waterTemperatureDistribution": {
+      "type": "triangular",
+      "min": 10,
+      "max": 30,
+      "mode": 20
+    },
+    "weightDistribution": {
+      "type": "lognormal",
+      "mean": 1,
+      "sigma": 0.5
+    },
+    "resource": {
+      "STONE": 1
+    },
+    "value": 80
+  },
+  "QUARTZSCALE": {
+    "name": "Quartzscale",
+    "rarity": 1100,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 6,
+      "mean": 25
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 0.8,
+      "mean": 1.2
+    },
+    "resource": {
+      "QUARTZ": 0.8,
+      "FISH_SCALES": 0.2
+    },
+    "value": 180
+  },
+  "COBALT_MACKEREL": {
+    "name": "Cobalt Mackerel",
+    "rarity": 700,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 8,
+      "mean": 20
+    },
+    "weightDistribution": {
+      "type": "exponential",
+      "lambda": 0.4
+    },
+    "resource": {
+      "COBALT": 0.85,
+      "WATER": 0.15
+    },
+    "value": 370
+  },
+  "IRONHEAD_CATFISH": {
+    "name": "Ironhead Catfish",
+    "rarity": 950,
+    "waterTemperatureDistribution": {
+      "type": "triangular",
+      "min": 15,
+      "max": 35,
+      "mode": 25
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 3,
+      "mean": 6
+    },
+    "resource": {
+      "IRON": 0.9,
+      "BONE": 0.1
+    },
+    "value": 220
+  },
+  "FLINTFIN": {
+    "name": "Flintfin",
+    "rarity": 1050,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 4,
+      "mean": 22
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 1,
+      "mean": 2
+    },
+    "resource": {
+      "FLINT": 1
+    },
+    "value": 150
+  },
+  "STORMSCALE": {
+    "name": "Stormscale",
+    "rarity": 600,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 5,
+      "mean": 18
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 1,
+      "mean": 2
+    },
+    "resource": {
+      "STORMSTONE": 0.75,
+      "WATER": 0.25
+    },
+    "value": 450
+  },
+  "AMBER_JACK": {
+    "name": "Amber Jack",
+    "rarity": 700,
+    "waterTemperatureDistribution": {
+      "type": "uniform",
+      "min": 10,
+      "max": 30
+    },
+    "weightDistribution": {
+      "type": "lognormal",
+      "mean": 3,
+      "sigma": 0.7
+    },
+    "resource": {
+      "AMBER": 0.8,
+      "BONE": 0.2
+    },
+    "value": 350
+  },
+  "SEASTONE_MINNOW": {
+    "name": "Seastone Minnow",
+    "rarity": 1250,
+    "waterTemperatureDistribution": {
+      "type": "triangular",
+      "min": 0,
+      "max": 20,
+      "mode": 10
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 0.4,
+      "mean": 0.6
+    },
+    "resource": {
+      "STONE": 1
+    },
+    "value": 90
+  },
+  "INKFISH": {
+    "name": "Inkfish",
+    "rarity": 1100,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 4,
+      "mean": 15
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 1,
+      "mean": 2
+    },
+    "resource": {
+      "INK": 0.9,
+      "WATER": 0.1
+    },
+    "value": 150
+  },
+  "REDSTONE_SNAPPER": {
+    "name": "Redstone Snapper",
+    "rarity": 850,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 3,
+      "mean": 22
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 2,
+      "mean": 3
+    },
+    "resource": {
+      "REDSTONE": 1
+    },
+    "value": 250
+  },
+  "BRASS_BARRACUDA": {
+    "name": "Brass Barracuda",
+    "rarity": 950,
+    "waterTemperatureDistribution": {
+      "type": "triangular",
+      "min": 15,
+      "max": 35,
+      "mode": 20
+    },
+    "weightDistribution": {
+      "type": "exponential",
+      "lambda": 0.6
+    },
+    "resource": {
+      "BRASS": 0.85,
+      "FISH_SCALES": 0.15
+    },
+    "value": 270
+  },
+  "GOLDLEAF_MANTA": {
+    "name": "Goldleaf Manta",
+    "rarity": 450,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 6,
+      "mean": 30
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 3,
+      "mean": 4
+    },
+    "resource": {
+      "GOLD": 0.7,
+      "LEAF": 0.3
+    },
+    "value": 700
+  },
+  "MOONSTONE_PERCH": {
+    "name": "Moonstone Perch",
+    "rarity": 500,
+    "waterTemperatureDistribution": {
+      "type": "uniform",
+      "min": 5,
+      "max": 25
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 2,
+      "mean": 3
+    },
+    "resource": {
+      "MOONSTONE": 1
+    },
+    "value": 500
+  },
+  "SHELLBACK_CARP": {
+    "name": "Shellback Carp",
+    "rarity": 900,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 3,
+      "mean": 20
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 2,
+      "mean": 4
+    },
+    "resource": {
+      "SHELL": 0.85,
+      "STONE": 0.15
+    },
+    "value": 200
+  },
+  "TOPAZ_TETRA": {
+    "name": "Topaz Tetra",
+    "rarity": 750,
+    "waterTemperatureDistribution": {
+      "type": "triangular",
+      "min": 0,
+      "max": 20,
+      "mode": 10
+    },
+    "weightDistribution": {
+      "type": "lognormal",
+      "mean": 0.7,
+      "sigma": 0.3
+    },
+    "resource": {
+      "TOPAZ": 0.8,
+      "FISH_SCALES": 0.2
+    },
+    "value": 400
+  },
+  "FIRETAIL": {
+    "name": "Firetail",
+    "rarity": 400,
+    "waterTemperatureDistribution": {
+      "type": "uniform",
+      "min": 25,
+      "max": 50
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 1.5,
+      "mean": 2
+    },
+    "resource": {
+      "FIRESTONE": 1
+    },
+    "value": 450
+  },
+  "SAPPHIRE_BASS": {
+    "name": "Sapphire Bass",
+    "rarity": 300,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 3,
+      "mean": 20
+    },
+    "weightDistribution": {
+      "type": "lognormal",
+      "mean": 3,
+      "sigma": 0.6
+    },
+    "resource": {
+      "SAPPHIRE": 1
+    },
+    "value": 600
+  },
+  "DRIFTFIN": {
+    "name": "Driftfin",
+    "rarity": 1150,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 8,
+      "mean": 18
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 2,
+      "mean": 1.5
+    },
+    "resource": {
+      "WOOD": 1
+    },
+    "value": 120
+  },
+  "ASHSCALE_EEL": {
+    "name": "Ashscale Eel",
+    "rarity": 800,
+    "waterTemperatureDistribution": {
+      "type": "triangular",
+      "min": 30,
+      "max": 45,
+      "mode": 35
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 3,
+      "mean": 5
+    },
+    "resource": {
+      "ASH": 0.9,
+      "COAL": 0.1
+    },
+    "value": 280
+  },
+  "STORMTAIL": {
+    "name": "Stormtail",
+    "rarity": 600,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 5,
+      "mean": 15
+    },
+    "weightDistribution": {
+      "type": "lognormal",
+      "mean": 2.5,
+      "sigma": 0.5
+    },
+    "resource": {
+      "STORMSTONE": 1
+    },
+    "value": 450
+  },
+  "SLATE_TROUT": {
+    "name": "Slate Trout",
+    "rarity": 1200,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 4,
+      "mean": 20
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 1.2,
+      "mean": 1
+    },
+    "resource": {
+      "SLATE": 1
+    },
+    "value": 140
+  },
+  "EMERALD_ANGELFISH": {
+    "name": "Emerald Angelfish",
+    "rarity": 300,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 5,
+      "mean": 25
+    },
+    "weightDistribution": {
+      "type": "lognormal",
+      "mean": 1.5,
+      "sigma": 0.4
+    },
+    "resource": {
+      "EMERALD": 1
+    },
+    "value": 650
+  },
+  "VOID_CARP": {
+    "name": "Void Carp",
+    "rarity": 1500,
+    "waterTemperatureDistribution": {
+      "type": "triangular",
+      "min": -10,
+      "max": 10,
+      "mode": 0
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 1.5,
+      "mean": 2
+    },
+    "resource": {
+      "VOIDSTONE": 0.9,
+      "BONE": 0.1
+    },
+    "value": 90
+  },
+  "COPPERHEAD_EEL": {
+    "name": "Copperhead Eel",
+    "rarity": 1000,
+    "waterTemperatureDistribution": {
+      "type": "uniform",
+      "min": 15,
+      "max": 35
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 1,
+      "mean": 3
+    },
+    "resource": {
+      "COPPER": 1
+    },
+    "value": 200
+  },
+  "TINDER_SNAPPER": {
+    "name": "Tinder Snapper",
+    "rarity": 900,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 4,
+      "mean": 30
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 1,
+      "mean": 2
+    },
+    "resource": {
+      "WOOD": 0.9,
+      "FIRESTONE": 0.1
+    },
+    "value": 190
+  },
+  "IVORY_TUNA": {
+    "name": "Ivory Tuna",
+    "rarity": 400,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 6,
+      "mean": 28
+    },
+    "weightDistribution": {
+      "type": "lognormal",
+      "mean": 4,
+      "sigma": 0.7
+    },
+    "resource": {
+      "IVORY": 0.8,
+      "BONE": 0.2
+    },
+    "value": 540
+  },
+  "SALTFIN": {
+    "name": "Saltfin",
+    "rarity": 850,
+    "waterTemperatureDistribution": {
+      "type": "uniform",
+      "min": 10,
+      "max": 35
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 0.5,
+      "mean": 1
+    },
+    "resource": {
+      "SALT": 1
+    },
+    "value": 120
+  },
+  "ZINC_MINNOW": {
+    "name": "Zinc Minnow",
+    "rarity": 1050,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 5,
+      "mean": 15
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 0.3,
+      "mean": 0.5
+    },
+    "resource": {
+      "ZINC": 1
+    },
+    "value": 180
+  },
+  "SILVER_RAY": {
+    "name": "Silver Ray",
+    "rarity": 200,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 2,
+      "mean": 20
+    },
+    "weightDistribution": {
+      "type": "exponential",
+      "lambda": 0.5
+    },
+    "resource": {
+      "SILVER": 1
+    },
+    "value": 900
+  },
+  "GARNET_GROUPER": {
+    "name": "Garnet Grouper",
+    "rarity": 500,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 4,
+      "mean": 25
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 2,
+      "mean": 5
+    },
+    "resource": {
+      "GARNET": 1
+    },
+    "value": 470
+  },
+  "FLAREFISH": {
+    "name": "Flarefish",
+    "rarity": 600,
+    "waterTemperatureDistribution": {
+      "type": "uniform",
+      "min": 35,
+      "max": 50
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 1,
+      "mean": 1
+    },
+    "resource": {
+      "FIRESTONE": 1
+    },
+    "value": 400
+  },
+  "LEVIATHAN": {
+    "name": "Leviathan",
+    "rarity": 50,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 3,
+      "mean": 15
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 10,
+      "mean": 100
+    },
+    "resource": {
+      "BONE": 0.5,
+      "IVORY": 0.5
+    },
+    "value": 5000
+  },
+  "RUBY_PIKE": {
+    "name": "Ruby Pike",
+    "rarity": 400,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 3,
+      "mean": 20
+    },
+    "weightDistribution": {
+      "type": "lognormal",
+      "mean": 2.5,
+      "sigma": 0.4
+    },
+    "resource": {
+      "RUBY": 0.8,
+      "BONE": 0.2
+    },
+    "value": 700
+  },
+  "BONEFIN": {
+    "name": "Bonefin",
+    "rarity": 1150,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 4,
+      "mean": 25
+    },
+    "weightDistribution": {
+      "type": "lognormal",
+      "mean": 1.2,
+      "sigma": 0.3
+    },
+    "resource": {
+      "BONE": 1
+    },
+    "value": 100
+  },
+  "KELP_PIKE": {
+    "name": "Kelp Pike",
+    "rarity": 900,
+    "waterTemperatureDistribution": {
+      "type": "uniform",
+      "min": 10,
+      "max": 30
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 1.5,
+      "mean": 2.5
+    },
+    "resource": {
+      "KELP": 1
+    },
+    "value": 150
+  },
+  "PYRITE_EEL": {
+    "name": "Pyrite Eel",
+    "rarity": 950,
+    "waterTemperatureDistribution": {
+      "type": "triangular",
+      "min": 15,
+      "max": 40,
+      "mode": 30
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 2,
+      "mean": 5
+    },
+    "resource": {
+      "PYRITE": 1
+    },
+    "value": 220
+  },
+  "PLATINUM_BASS": {
+    "name": "Platinum Bass",
+    "rarity": 100,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 5,
+      "mean": 25
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 4,
+      "mean": 6
+    },
+    "resource": {
+      "PLATINUM": 1
+    },
+    "value": 2000
+  },
+  "SHADOWFIN": {
+    "name": "Shadowfin",
+    "rarity": 300,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 2,
+      "mean": 10
+    },
+    "weightDistribution": {
+      "type": "lognormal",
+      "mean": 1.5,
+      "sigma": 0.3
+    },
+    "resource": {
+      "SHADOWSTONE": 0.9,
+      "BONE": 0.1
+    },
+    "value": 750
+  },
+  "MAGMA_CARP": {
+    "name": "Magma Carp",
+    "rarity": 200,
+    "waterTemperatureDistribution": {
+      "type": "uniform",
+      "min": 35,
+      "max": 55
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 1.5,
+      "mean": 3
+    },
+    "resource": {
+      "MAGMA_ROCK": 1
+    },
+    "value": 850
+  },
+  "SILT_MANTA": {
+    "name": "Silt Manta",
+    "rarity": 1200,
+    "waterTemperatureDistribution": {
+      "type": "triangular",
+      "min": 15,
+      "max": 35,
+      "mode": 20
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 4,
+      "mean": 5
+    },
+    "resource": {
+      "SILT": 0.9,
+      "SAND": 0.1
+    },
+    "value": 140
+  },
+  "AMBERFIN": {
+    "name": "Amberfin",
+    "rarity": 800,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 6,
+      "mean": 25
+    },
+    "weightDistribution": {
+      "type": "lognormal",
+      "mean": 2,
+      "sigma": 0.5
+    },
+    "resource": {
+      "AMBER": 1
+    },
+    "value": 300
+  },
+  "GLIMMERFISH": {
+    "name": "Glimmerfish",
+    "rarity": 950,
+    "waterTemperatureDistribution": {
+      "type": "uniform",
+      "min": 5,
+      "max": 25
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 0.8,
+      "mean": 1.2
+    },
+    "resource": {
+      "GLIMMERSTONE": 0.8,
+      "WATER": 0.2
+    },
+    "value": 180
+  },
+  "AETHER_RAY": {
+    "name": "Aether Ray",
+    "rarity": 500,
+    "waterTemperatureDistribution": {
+      "type": "triangular",
+      "min": 20,
+      "max": 40,
+      "mode": 30
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 2.5,
+      "mean": 4.5
+    },
+    "resource": {
+      "AETHER_CRYSTAL": 0.9,
+      "WATER": 0.1
+    },
+    "value": 500
+  },
+  "DRIFTWOOD_MINNOW": {
+    "name": "Driftwood Minnow",
+    "rarity": 1500,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 8,
+      "mean": 18
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 0.5,
+      "mean": 0.7
+    },
+    "resource": {
+      "WOOD": 1
+    },
+    "value": 80
+  },
+  "STONEBACK_EEL": {
+    "name": "Stoneback Eel",
+    "rarity": 1450,
+    "waterTemperatureDistribution": {
+      "type": "uniform",
+      "min": 10,
+      "max": 30
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 2,
+      "mean": 4
+    },
+    "resource": {
+      "STONE": 1
+    },
+    "value": 100
+  },
+  "IRONSCALE_TROUT": {
+    "name": "Ironscale Trout",
+    "rarity": 1400,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 5,
+      "mean": 20
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 2,
+      "mean": 3
+    },
+    "resource": {
+      "IRON": 1
+    },
+    "value": 150
+  },
+  "CLOTHFIN": {
+    "name": "Clothfin",
+    "rarity": 1500,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 4,
+      "mean": 25
+    },
+    "weightDistribution": {
+      "type": "lognormal",
+      "mean": 1.2,
+      "sigma": 0.5
+    },
+    "resource": {
+      "CLOTH": 1
+    },
+    "value": 90
+  },
+  "PEBBLE_PIKE": {
+    "name": "Pebble Pike",
+    "rarity": 1550,
+    "waterTemperatureDistribution": {
+      "type": "uniform",
+      "min": 5,
+      "max": 25
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 1.5,
+      "mean": 2.5
+    },
+    "resource": {
+      "STONE": 1
+    },
+    "value": 85
+  },
+  "IRON_GILL": {
+    "name": "Iron Gill",
+    "rarity": 1420,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 7,
+      "mean": 22
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 1.2,
+      "mean": 2.8
+    },
+    "resource": {
+      "IRON": 0.9,
+      "STONE": 0.1
+    },
+    "value": 140
+  },
+  "FIBERSCALE": {
+    "name": "Fiberscale",
+    "rarity": 1470,
+    "waterTemperatureDistribution": {
+      "type": "triangular",
+      "min": 10,
+      "max": 35,
+      "mode": 25
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 1,
+      "mean": 2
+    },
+    "resource": {
+      "CLOTH": 1
+    },
+    "value": 95
+  },
+  "LOGTAIL": {
+    "name": "Logtail",
+    "rarity": 1500,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 6,
+      "mean": 15
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 3,
+      "mean": 5
+    },
+    "resource": {
+      "WOOD": 1
+    },
+    "value": 80
+  },
+  "GRAVEL_TROUT": {
+    "name": "Gravel Trout",
+    "rarity": 1480,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 4,
+      "mean": 20
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 1.5,
+      "mean": 2
+    },
+    "resource": {
+      "STONE": 1
+    },
+    "value": 90
+  },
+  "RUSTY_MINNOW": {
+    "name": "Rusty Minnow",
+    "rarity": 1450,
+    "waterTemperatureDistribution": {
+      "type": "uniform",
+      "min": 5,
+      "max": 25
+    },
+    "weightDistribution": {
+      "type": "lognormal",
+      "mean": 0.7,
+      "sigma": 0.4
+    },
+    "resource": {
+      "IRON": 1
+    },
+    "value": 110
+  },
+  "TIMBER_SNAPPER": {
+    "name": "Timber Snapper",
+    "rarity": 1500,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 5,
+      "mean": 20
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 2,
+      "mean": 4
+    },
+    "resource": {
+      "WOOD": 1
+    },
+    "value": 85
+  },
+  "THREADFIN": {
+    "name": "Threadfin",
+    "rarity": 1520,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 4,
+      "mean": 18
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 1.2,
+      "mean": 1.5
+    },
+    "resource": {
+      "CLOTH": 0.2,
+      "THREAD": 0.8
+    },
+    "value": 85
+  },
+  "SILKFISH": {
+    "name": "Silkfish",
+    "rarity": 1480,
+    "waterTemperatureDistribution": {
+      "type": "uniform",
+      "min": 10,
+      "max": 30
+    },
+    "weightDistribution": {
+      "type": "lognormal",
+      "mean": 1.2,
+      "sigma": 0.5
+    },
+    "resource": {
+      "SILK": 1
+    },
+    "value": 120
+  },
+  "WEAVE_EEL": {
+    "name": "Weave Eel",
+    "rarity": 1500,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 6,
+      "mean": 20
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 1.5,
+      "mean": 2
+    },
+    "resource": {
+      "CLOTH": 1
+    },
+    "value": 90
+  },
+  "BOLT_SNAPPER": {
+    "name": "Bolt Snapper",
+    "rarity": 1490,
+    "waterTemperatureDistribution": {
+      "type": "normal",
+      "sd": 5,
+      "mean": 25
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 2.5,
+      "mean": 3
+    },
+    "resource": {
+      "CLOTH": 1
+    },
+    "value": 100
+  },
+  "CANVAS_CARP": {
+    "name": "Canvas Carp",
+    "rarity": 1500,
+    "waterTemperatureDistribution": {
+      "type": "triangular",
+      "min": 15,
+      "max": 35,
+      "mode": 25
+    },
+    "weightDistribution": {
+      "type": "lognormal",
+      "mean": 1.5,
+      "sigma": 0.4
+    },
+    "resource": {
+      "CLOTH": 0.9,
+      "THREAD": 0.1
+    },
+    "value": 95
+  },
+  "PATCHFIN": {
+    "name": "Patchfin",
+    "rarity": 1510,
+    "waterTemperatureDistribution": {
+      "type": "uniform",
+      "min": 5,
+      "max": 25
+    },
+    "weightDistribution": {
+      "type": "normal",
+      "sd": 1.2,
+      "mean": 2
+    },
+    "resource": {
+      "CLOTH": 1
+    },
+    "value": 80
+  }
+}

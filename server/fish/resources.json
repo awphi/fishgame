@@ -1,0 +1,189 @@
+{
+  "IRON": {
+    "name": "Iron"
+  },
+  "BONE": {
+    "name": "Bone"
+  },
+  "QUARTZ": {
+    "name": "Quartz"
+  },
+  "SAND": {
+    "name": "Sand"
+  },
+  "WOOD": {
+    "name": "Wood"
+  },
+  "THORNS": {
+    "name": "Thorns"
+  },
+  "COAL": {
+    "name": "Coal"
+  },
+  "CORAL": {
+    "name": "Coral"
+  },
+  "SHALE": {
+    "name": "Shale"
+  },
+  "STONE": {
+    "name": "Stone"
+  },
+  "SILVER": {
+    "name": "Silver"
+  },
+  "FISH_SCALES": {
+    "name": "Fish_scales"
+  },
+  "SEAWEED": {
+    "name": "Seaweed"
+  },
+  "MUD": {
+    "name": "Mud"
+  },
+  "SALT": {
+    "name": "Salt"
+  },
+  "WATER": {
+    "name": "Water"
+  },
+  "RUST": {
+    "name": "Rust"
+  },
+  "OPAL": {
+    "name": "Opal"
+  },
+  "PEWTER": {
+    "name": "Pewter"
+  },
+  "BLOODSTONE": {
+    "name": "Bloodstone"
+  },
+  "MOSS": {
+    "name": "Moss"
+  },
+  "JADE": {
+    "name": "Jade"
+  },
+  "ASH": {
+    "name": "Ash"
+  },
+  "GOLD": {
+    "name": "Gold"
+  },
+  "CRYSTAL": {
+    "name": "Crystal"
+  },
+  "ICE": {
+    "name": "Ice"
+  },
+  "COPPER": {
+    "name": "Copper"
+  },
+  "SAPPHIRE": {
+    "name": "Sapphire"
+  },
+  "EMERALD": {
+    "name": "Emerald"
+  },
+  "GRANITE": {
+    "name": "Granite"
+  },
+  "TAR": {
+    "name": "Tar"
+  },
+  "OIL": {
+    "name": "Oil"
+  },
+  "OBSIDIAN": {
+    "name": "Obsidian"
+  },
+  "COBALT": {
+    "name": "Cobalt"
+  },
+  "FLINT": {
+    "name": "Flint"
+  },
+  "STORMSTONE": {
+    "name": "Stormstone"
+  },
+  "AMBER": {
+    "name": "Amber"
+  },
+  "INK": {
+    "name": "Ink"
+  },
+  "REDSTONE": {
+    "name": "Redstone"
+  },
+  "BRASS": {
+    "name": "Brass"
+  },
+  "LEAF": {
+    "name": "Leaf"
+  },
+  "MOONSTONE": {
+    "name": "Moonstone"
+  },
+  "SHELL": {
+    "name": "Shell"
+  },
+  "TOPAZ": {
+    "name": "Topaz"
+  },
+  "FIRESTONE": {
+    "name": "Firestone"
+  },
+  "SLATE": {
+    "name": "Slate"
+  },
+  "VOIDSTONE": {
+    "name": "Voidstone"
+  },
+  "IVORY": {
+    "name": "Ivory"
+  },
+  "ZINC": {
+    "name": "Zinc"
+  },
+  "GARNET": {
+    "name": "Garnet"
+  },
+  "RUBY": {
+    "name": "Ruby"
+  },
+  "KELP": {
+    "name": "Kelp"
+  },
+  "PYRITE": {
+    "name": "Pyrite"
+  },
+  "PLATINUM": {
+    "name": "Platinum"
+  },
+  "SHADOWSTONE": {
+    "name": "Shadowstone"
+  },
+  "MAGMA_ROCK": {
+    "name": "Magma Rock"
+  },
+  "SILT": {
+    "name": "Silt"
+  },
+  "GLIMMERSTONE": {
+    "name": "Glimmerstone"
+  },
+  "AETHER_CRYSTAL": {
+    "name": "Aether Crystal"
+  },
+
+  "CLOTH": {
+    "name": "Cloth"
+  },
+  "SILK": {
+    "name": "Silk"
+  },
+  "THREAD": {
+    "name": "Thread"
+  }
+}
