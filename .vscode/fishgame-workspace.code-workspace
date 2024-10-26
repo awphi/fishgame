@@ -5,13 +5,16 @@
       "name": "root"
     },
     {
-      "path": "../proto"
+      "path": "../proto",
+      "name": "proto"
     },
     {
-      "path": "../server"
+      "path": "../server",
+      "name": "server"
     },
     {
-      "path": "../client"
+      "path": "../client",
+      "name": "client"
     }
   ]
 }
