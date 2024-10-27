@@ -3,10 +3,27 @@ package fishgame;
 
 option go_package = "server/gen";
 
-message PingRequest {
+message PlayerActionPing {
   int32 id = 1;
 }
 
-message PingResponse {
+message PlayerAction {
+  oneof payload {
+    PlayerActionPing ping = 1;
+  }
+}
+
+message GameServerUpdatePong {
   int32 id = 1;
+}
+
+message SomeGameUpdate {
+  int32 foo = 1;
+}
+
+message GameServerUpdate {
+  oneof payload {
+    GameServerUpdatePong pong = 1;
+    SomeGameUpdate some_game_update = 2;
+  }
 }

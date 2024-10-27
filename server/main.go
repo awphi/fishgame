@@ -9,7 +9,9 @@ import (
 	"net/http"
 
 	"github.com/awphi/fishgame/fish"
+	"github.com/awphi/fishgame/gen"
 	"github.com/gorilla/websocket"
+	"google.golang.org/protobuf/proto"
 )
 
 const addr = "localhost:8081"
@@ -34,12 +36,11 @@ func main() {
 }
 
 func startServer() {
-	// TODO goroutine for websockets (either build a list of messages for the game loop to handle or handle directly, locking via mutexes)
-	http.HandleFunc("/", echo)
+	http.HandleFunc("/", handle)
 	log.Fatal(http.ListenAndServe(addr, nil))
 }
 
-func echo(w http.ResponseWriter, r *http.Request) {
+func handle(w http.ResponseWriter, r *http.Request) {
 	c, err := upgrader.Upgrade(w, r, nil)
 	if err != nil {
 		log.Print("upgrade:", err)
@@ -48,14 +49,37 @@ func echo(w http.ResponseWriter, r *http.Request) {
 	defer c.Close()
 	for {
 		mt, message, err := c.ReadMessage()
-		if err != nil {
-			log.Println("read:", err)
+
+		if mt != websocket.BinaryMessage {
 			break
 		}
-		log.Printf("recv: %s", message)
-		err = c.WriteMessage(mt, message)
+
+		// TODO pull this IO stuff out - make utils for wrapping updates and unwrapping actions and finish implementing ID-based ping
+
 		if err != nil {
-			log.Println("write:", err)
+			log.Println("Failed to read message:", err)
+			break
+		}
+
+		action := &gen.PlayerAction{}
+		if err := proto.Unmarshal(message, action); err != nil {
+			log.Println("Failed to parse address book:", err)
+			break
+		}
+
+		log.Println("Received action:", action)
+
+		// for now just always respond with a ping with ID 1008
+		payload := &gen.GameServerUpdatePong{Id: 1008}
+		update := &gen.GameServerUpdate{Payload: &gen.GameServerUpdate_Pong{Pong: payload}}
+
+		out, err := proto.Marshal(update)
+		if err != nil {
+			log.Println("Failed to encode update:", err)
+		}
+
+		if err := c.WriteMessage(websocket.BinaryMessage, out); err != nil {
+			log.Println("Failed to write message:", err)
 			break
 		}
 	}
@@ -70,5 +94,5 @@ func gameLoop() {
 }
 
 func tick(t time.Time) {
-	fmt.Println("tick", t)
+	//fmt.Println("tick", t)
 }
