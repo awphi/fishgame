@@ -1,4 +1,4 @@
-import { GameServerUpdate, PlayerActionPing } from './gen/fishgame';
+import { GameServerUpdate, PlayerActionPing } from './fishgame.pb';
 
 export interface FishGameClientOptions {
 	host: string;

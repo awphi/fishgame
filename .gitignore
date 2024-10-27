@@ -22,4 +22,5 @@ vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 
 # protoc gen code
-gen/
+*.pb.go
+*.pb.ts
