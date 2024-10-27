@@ -44,4 +44,5 @@ export class FishGameClient {
 	// TODO add ping functionality
 }
 
+// single global client instance for convenience
 export const client = new FishGameClient({ host: 'ws://localhost:8081' });
