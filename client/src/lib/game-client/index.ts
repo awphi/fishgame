@@ -1,4 +1,4 @@
-import { GameServerUpdate, PlayerActionPing } from './fishgame.pb';
+import { GameServerUpdate, PlayerAction } from './fishgame.pb';
 
 export interface FishGameClientOptions {
 	host: string;
@@ -33,7 +33,8 @@ export class FishGameClient {
 		this.ws.addEventListener('close', onClose);
 
 		this.ws.addEventListener('open', () => {
-			this.ws!.send(PlayerActionPing.encode({ id: 0 }).finish());
+			const action = PlayerAction.encode({ ping: { id: 90 } }).finish();
+			this.ws!.send(action);
 		});
 	}
 
