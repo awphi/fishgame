@@ -1,0 +1,12 @@
+syntax = "proto3";
+package fishgame;
+
+option go_package = "server/gen";
+
+message PingRequest {
+  int32 id = 1;
+}
+
+message PingResponse {
+  int32 id = 1;
+}
