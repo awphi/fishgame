@@ -1,4 +1,5 @@
 import { GameServerUpdate, PlayerAction } from './fishgame.pb';
+import { EventBus } from '../event-bus';
 
 export interface FishGameClientOptions {
 	host: string;
@@ -7,6 +8,7 @@ export interface FishGameClientOptions {
 
 export class FishGameClient {
 	private ws: WebSocket | undefined;
+	private eventBus = new EventBus<GameServerUpdate>();
 
 	private get readyState(): number {
 		return this.ws?.readyState ?? 3;
@@ -39,10 +41,13 @@ export class FishGameClient {
 	}
 
 	private onMessage(ev: MessageEvent<ArrayBuffer>): void {
-		console.log(ev, GameServerUpdate.decode(new Uint8Array(ev.data)));
+		const update = GameServerUpdate.decode(new Uint8Array(ev.data));
+		const key = Object.keys(update)[0] as keyof GameServerUpdate;
+		this.eventBus.fire(key, update[key]!);
 	}
 
-	// TODO add ping functionality
+	on = this.eventBus.on;
+	off = this.eventBus.off;
 }
 
 // single global client instance for convenience

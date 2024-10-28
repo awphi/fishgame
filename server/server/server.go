@@ -7,6 +7,7 @@ import (
 
 	"github.com/gorilla/websocket"
 	"google.golang.org/protobuf/proto"
+	"google.golang.org/protobuf/reflect/protoreflect"
 )
 
 const addr = "localhost:8081"
@@ -23,15 +24,15 @@ func StartServer() {
 	log.Fatal(http.ListenAndServe(addr, nil))
 }
 
-func handle(w http.ResponseWriter, r *http.Request) {
-	c, err := upgrader.Upgrade(w, r, nil)
+func handle(writer http.ResponseWriter, req *http.Request) {
+	conn, err := upgrader.Upgrade(writer, req, nil)
 	if err != nil {
 		log.Print("upgrade:", err)
 		return
 	}
-	defer c.Close()
+	defer conn.Close()
 	for {
-		mt, message, err := c.ReadMessage()
+		mt, msg, err := conn.ReadMessage()
 
 		if mt != websocket.BinaryMessage {
 			break
@@ -43,24 +44,24 @@ func handle(w http.ResponseWriter, r *http.Request) {
 		}
 
 		action := &PlayerAction{}
-		if err := proto.Unmarshal(message, action); err != nil {
+		if err := proto.Unmarshal(msg, action); err != nil {
 			log.Println("Failed to parse address book:", err)
 			break
 		}
 
 		log.Println("Received action:", action)
-		action.Act(c)
+		action.Act(conn)
 	}
 }
 
-func send(c *websocket.Conn, update *GameServerUpdate) error {
+func send(conn *websocket.Conn, update protoreflect.ProtoMessage) error {
 	out, err := proto.Marshal(update)
 	if err != nil {
 		log.Println("Failed to encode update:", err)
 		return err
 	}
 
-	if err := c.WriteMessage(websocket.BinaryMessage, out); err != nil {
+	if err := conn.WriteMessage(websocket.BinaryMessage, out); err != nil {
 		log.Println("Failed to write message:", err)
 		return err
 	}
