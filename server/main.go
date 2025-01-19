@@ -30,5 +30,5 @@ func gameLoop() {
 }
 
 func tick(t time.Time) {
-	//fmt.Println("tick", t)
+	//log.Println("gameTick", t)
 }
