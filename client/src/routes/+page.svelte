@@ -1,7 +1,9 @@
 <script lang="ts">
-	import { client } from '$lib/game-client';
-
-	console.log(client);
+	import ConnectionStatus from '$lib/components/ConnectionStatus.svelte';
 </script>
 
-<div class="w-screen h-screen bg-neutral-900 text-neutral-200"></div>
+<div class="w-screen h-screen bg-neutral-900 text-neutral-200">
+	<div class="absolute right-2 top-2">
+		<ConnectionStatus></ConnectionStatus>
+	</div>
+</div>
