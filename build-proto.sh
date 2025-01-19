@@ -1,5 +1,3 @@
-# TODO fix this (or give up on making it work on windows)
-
 tsproto_plugin="./client/node_modules/.bin/protoc-gen-ts_proto"
 
 if [[ "$OSTYPE" == "cygwin" || "$OSTYPE" == "msys" || "$OSTYPE" == "win32" ]]; then
