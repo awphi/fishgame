@@ -4,7 +4,6 @@ package fishgame;
 option go_package = "server/server";
 
 message PlayerActionPing {
-  int32 id = 1;
 }
 
 message PlayerAction {
@@ -14,16 +13,16 @@ message PlayerAction {
 }
 
 message GameServerUpdatePong {
-  int32 id = 1;
 }
 
-message SomeGameUpdate {
+// TODO remove this temporary game
+message GameServerUpdateExample {
   int32 foo = 1;
 }
 
 message GameServerUpdate {
   oneof payload {
     GameServerUpdatePong pong = 1;
-    SomeGameUpdate some_game_update = 2;
+    GameServerUpdateExample example = 2;
   }
 }
