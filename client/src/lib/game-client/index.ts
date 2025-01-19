@@ -1,7 +1,8 @@
 import { GameServerUpdate, PlayerAction } from './fishgame.pb';
 import { EventBus } from '../event-bus';
 
-const HEARTBEAT_TIMER = 5000; // ms
+const HEARTBEAT_TIMER = 250; // ms
+const MAX_LATENCY_SAMPLES = 20;
 
 export interface FishGameClientOptions {
 	host: string;
@@ -13,9 +14,16 @@ export class FishGameClient {
 	private eventBus = new EventBus<GameServerUpdate>();
 	private pingTimeout: number = -1;
 	private deferedMessages: Uint8Array<ArrayBufferLike>[] = [];
+	private lastPing: number = -1;
+	private latencySamples: number[] = [];
 
 	public get readyState(): number {
 		return this.ws?.readyState ?? 3;
+	}
+
+	public get latency(): number {
+		const samples = this.latencySamples.toSorted((a, b) => a - b);
+		return samples[Math.floor(samples.length / 2)] ?? 0; // median
 	}
 
 	constructor(private opts: FishGameClientOptions) {
@@ -23,7 +31,11 @@ export class FishGameClient {
 
 		// heartbeat handler
 		this.on('pong', () => {
-			// TODO record latency figures with performance.now()
+			const ms = performance.now() - this.lastPing;
+			this.latencySamples.push(ms);
+			if (this.latencySamples.length > MAX_LATENCY_SAMPLES) {
+				this.latencySamples.shift();
+			}
 			this.pingTimeout = setTimeout(() => this.ping(), HEARTBEAT_TIMER);
 		});
 	}
@@ -42,6 +54,7 @@ export class FishGameClient {
 		console.log('ping');
 		const action = PlayerAction.encode({ ping: {} }).finish();
 		this.send(action);
+		this.lastPing = performance.now();
 	}
 
 	private connect(): void {

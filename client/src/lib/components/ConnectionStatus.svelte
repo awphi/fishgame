@@ -16,4 +16,5 @@
 <div class=" bg-neutral-700 rounded-md px-4 py-1 select-none w-fit flex items-center gap-2">
 	<div class={`w-2 h-2 rounded-full ${statusColors[$clientStore.readyState]}`}></div>
 	<span>{statusText[$clientStore.readyState]}</span>
+	<span>{$clientStore.latency.toFixed(0)}ms</span>
 </div>
