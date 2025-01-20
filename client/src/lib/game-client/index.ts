@@ -1,7 +1,7 @@
 import { GameServerUpdate, PlayerAction } from './fishgame.pb';
 import { EventBus } from '../event-bus';
 
-const HEARTBEAT_TIMER = 250; // ms
+const HEARTBEAT_TIMER = 1000; // ms
 const MAX_LATENCY_SAMPLES = 20;
 
 export interface FishGameClientOptions {

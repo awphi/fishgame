@@ -4,6 +4,7 @@ import (
 	"log"
 	"net/http"
 	"strings"
+	sync "sync"
 	"time"
 
 	"github.com/gorilla/websocket"
@@ -11,8 +12,9 @@ import (
 	"google.golang.org/protobuf/reflect/protoreflect"
 )
 
-const addr = "localhost:8081"
-const maxPlayers = 128
+const addr string = "localhost:8081"
+const maxPlayers int = 128
+const timeout int64 = 5000 //ms
 
 var upgrader = websocket.Upgrader{
 	CheckOrigin: func(r *http.Request) bool {
@@ -21,20 +23,44 @@ var upgrader = websocket.Upgrader{
 	},
 }
 
-var connections = map[*websocket.Conn]time.Time{} // TODO loop over this every 10 seconds and purge connections that have expired
+var connections = map[*websocket.Conn]time.Time{}
+var connectionsLock = sync.RWMutex{}
 
 func StartServer() {
+	go cleanupConnections()
 	http.HandleFunc("/", handle)
 	log.Fatal(http.ListenAndServe(addr, nil))
 }
 
+func cleanupConnections() {
+	ticker := time.NewTicker(time.Duration(timeout) * time.Millisecond)
+	defer ticker.Stop()
+	for tickTime := range ticker.C {
+		connectionsLock.RLock()
+
+		for conn, lastHeartbeat := range connections {
+			connectionsLock.RUnlock()
+			if tickTime.Sub(lastHeartbeat).Abs().Milliseconds() >= timeout {
+				removeConnection(conn)
+			}
+			connectionsLock.RLock()
+		}
+
+		connectionsLock.RUnlock()
+	}
+}
+
 func addConnection(conn *websocket.Conn) {
+	connectionsLock.Lock()
+	defer connectionsLock.Unlock()
 	connections[conn] = time.Now()
 	log.Println("Adding connection", conn.RemoteAddr())
 	log.Println(len(connections), "/", maxPlayers, " player slots in use")
 }
 
 func removeConnection(conn *websocket.Conn) {
+	connectionsLock.Lock()
+	defer connectionsLock.Unlock()
 	conn.Close()
 	delete(connections, conn)
 	log.Println("Removing connection", conn.RemoteAddr())
